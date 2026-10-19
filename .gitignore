@@ -20,6 +20,7 @@ out/
 # SQLite & local databases
 *.sqlite
 *.sqlite3
+*.sqlite-*
 *.db
 *.db-journal
 

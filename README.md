@@ -7,10 +7,20 @@
 [![React](https://img.shields.io/badge/react-v18.3-cyan)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/node.js-v22%20LTS-green)](https://nodejs.org/)
 [![Security Audit](https://img.shields.io/badge/security-Appendix%20D%20Verified-success)](./docs/SECURITY_REVIEW_CHECKLIST.md)
-[![Live on Vercel](https://img.shields.io/badge/deployed-Vercel%20Live-brightgreen)](https://finpilot-eight-blue.vercel.app)
+[![Live on Vercel](https://img.shields.io/badge/Vercel-Live%20Production-black?style=flat&logo=vercel&logoColor=white)](https://finpilot-eight-blue.vercel.app)
 
-**Live Production URL:** [https://finpilot-eight-blue.vercel.app](https://finpilot-eight-blue.vercel.app)  
-**Deployment Inspector:** [https://vercel.com/ojas-e770/finpilot](https://vercel.com/ojas-e770/finpilot)
+---
+
+### 🌐 Live Vercel Deployment & Interactive Demo
+
+FinPilot is deployed and running live in production on Vercel:
+
+| Resource | Direct Link | Description |
+| :--- | :--- | :--- |
+| **🚀 Production App** | **[https://finpilot-eight-blue.vercel.app](https://finpilot-eight-blue.vercel.app)** | Live commercial fintech single-page application |
+| **📊 Vercel Dashboard** | **[https://vercel.com/ojas-e770/finpilot](https://vercel.com/ojas-e770/finpilot)** | Vercel deployment inspector, logs & analytics |
+| **⚡ 1-Click Demo** | Click **"Launch Live Demo Workspace"** on the home screen | Instant deterministic financial workspace pre-seeded with 3-month history |
+| **🔄 Deploy Your Own** | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/24f2004729/finpilot) | Clone and deploy directly to your Vercel account |
 
 ---
 

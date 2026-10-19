@@ -1,0 +1,19 @@
+{
+  "name": "finpilot-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FinPilot · Institutional-Grade Personal Finance and Cash Flow Platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@finpilot/api & npm run dev --workspace=@finpilot/web",
+    "build": "npm run build --workspace=@finpilot/shared && npm run build --workspace=@finpilot/api && npm run build --workspace=@finpilot/web",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

@@ -6,8 +6,8 @@ import { Sparkles, ShieldCheck, ArrowRight, PlayCircle } from 'lucide-react';
 
 export const SignInView: React.FC<{ onSwitchToSignUp: () => void }> = ({ onSwitchToSignUp }) => {
   const { login, demoLogin } = useAuth();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('alex@finpilot.dev');
+  const [password, setPassword] = useState('DemoPilot2026!');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isDemoLoading, setIsDemoLoading] = useState(false);

@@ -7,6 +7,7 @@
 [![React](https://img.shields.io/badge/react-v18.3-cyan)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/node.js-v22%20LTS-green)](https://nodejs.org/)
 [![Security Audit](https://img.shields.io/badge/security-Appendix%20D%20Verified-success)](./docs/SECURITY_REVIEW_CHECKLIST.md)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/24f2004729/finpilot)
 
 ---
 

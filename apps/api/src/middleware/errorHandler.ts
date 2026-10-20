@@ -46,7 +46,18 @@ export function errorHandler(
     });
   }
 
-  // 3. Catch-all unexpected errors
+  // 3. Handle CORS policy rejections
+  if (err?.message && err.message.includes('Cross-Origin Request Blocked')) {
+    return res.status(403).json({
+      success: false,
+      error: {
+        code: 'CORS_FORBIDDEN',
+        message: 'Cross-origin request blocked by FinPilot strict security policy.',
+      },
+    });
+  }
+
+  // 4. Catch-all unexpected errors
   console.error('Unhandled server exception:', err);
   return res.status(500).json({
     success: false,

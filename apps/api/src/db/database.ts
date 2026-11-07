@@ -9,11 +9,12 @@ if (!fs.existsSync(dbDir)) {
   fs.mkdirSync(dbDir, { recursive: true });
 }
 
-export const db: InstanceType<typeof Database> = new Database(config.DB_PATH);
+export const db: InstanceType<typeof Database> = new Database(config.DB_PATH, { timeout: 10000 });
 
 // Enable WAL mode for high concurrency
 db.pragma('journal_mode = WAL');
 db.pragma('foreign_keys = ON');
+db.pragma('busy_timeout = 10000');
 
 export function initDatabase() {
   db.exec(`

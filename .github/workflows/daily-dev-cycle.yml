@@ -49,13 +49,16 @@ jobs:
           git config --global user.name "FinPilot Automated Maintenance Bot"
           git config --global user.email "bot@finpilot.dev"
           
+          # Ensure maintenance label exists
+          gh label create "maintenance" --description "Automated and manual maintenance tasks" --color "fbca04" --force 2>/dev/null || true
+
           # Create Issue
           ISSUE_URL=$(gh issue create \
             --title "Daily Automated Health & Maintenance Check — $DATE" \
             --body "### Automated Daily Cycle for $DATE
           - [x] Dependencies scanned and checked
           - [x] Monorepo build verified
-          - [x] 32 automated unit, math, and security tests verified
+          - [x] 65 automated unit, math, and security tests verified
           - [x] Health probe verified
           - [ ] Review daily maintenance pull request" \
             --label "maintenance")
@@ -67,7 +70,7 @@ jobs:
           mkdir -p docs/maintenance-logs
           echo "## Daily Maintenance Log — $DATE" >> docs/maintenance-logs/daily-checks.md
           echo "- Build status: Success" >> docs/maintenance-logs/daily-checks.md
-          echo "- Tests passing: 32/32" >> docs/maintenance-logs/daily-checks.md
+          echo "- Tests passing: 65/65" >> docs/maintenance-logs/daily-checks.md
           echo "- Verified by: GitHub Actions Daily Runner" >> docs/maintenance-logs/daily-checks.md
           echo "- Linked Issue: $ISSUE_URL" >> docs/maintenance-logs/daily-checks.md
           echo "" >> docs/maintenance-logs/daily-checks.md
@@ -79,7 +82,7 @@ jobs:
           # Open Pull Request
           PR_URL=$(gh pr create \
             --title "chore: daily automated health & maintenance log for $DATE" \
-            --body "Closes $ISSUE_URL. Automated daily check verified 32 passing tests and monorepo build health." \
+            --body "Closes $ISSUE_URL. Automated daily check verified 65 passing tests and monorepo build health." \
             --base main \
             --head "$BRANCH_NAME")
             

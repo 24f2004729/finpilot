@@ -61,18 +61,7 @@ flowchart TD
 
 ---
 
-## 👥 Five Senior FAANG-Level Engineers Ownership Matrix
-
-| Engineer Track | Primary Domain | Core Deliverables & Verified Modules |
-| :--- | :--- | :--- |
-| **Engineer 1** | Identity, Security & Core Platform | User Auth, Argon2/bcrypt hashing, JWT tokens, IP Rate Limiter, BOLA shield, [Security Threat Model](./docs/SECURITY_THREAT_MODEL.md). |
-| **Engineer 2** | Data Layer & Financial Transactions | Schema migrations, Transaction CRUD, [Integer-Cent ADR-002](./docs/ADR/ADR-002-integer-cent-currency-precision.md), [CSV Sanitizer ADR-003](./docs/ADR/ADR-003-formula-injection-protection-in-csv.md). |
-| **Engineer 3** | Budgeting & Cash Flow Intelligence | Budget tracking engine, visual clamp logic, monthly summary aggregator, non-judgmental spending insights algorithm. |
-| **Engineer 4** | Frontend UI/UX & Design System | Institutional design tokens, deterministic category charts, accessible table fallbacks, [UX Writing Rules](./docs/UX_WRITING_GUIDELINES.md). |
-| **Engineer 5** | DevOps, Testing & Release Readiness | Vitest automated test suite (32 tests), Docker multi-stage containers, `/api/health` probes, [Demo Runbook](./docs/DEMO_AND_HANDOFF_RUNBOOK.md). |
-
----
-
+ 
 ## 🔬 Key Specifications & Features
 
 ### 1. Detailed Dashboard Metrics (Chapter 08)
